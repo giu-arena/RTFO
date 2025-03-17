@@ -1,0 +1,4744 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/utente/ontologies/2024/5/RealToFictionOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/utente/ontologies/2024/5/RealToFictionOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/utente/ontologies/2024/5/RealToFictionOntology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="rtfo" IRI="http://www.semanticweb.org/utente/ontologies/2024/5/RealToFictionOntology#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="lrmoo" IRI="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="cidoc-crm" IRI="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <Import>http://iflastandards.info/ns/lrm/lrmoo/</Import>
+    <Import>http://www.cidoc-crm.org/cidoc-crm/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Un&apos;ontologia per la rappresentazione del rapporto Realtà-Finzione in un&apos;opera creativa, a partire dai materiale preparatori</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Real To Fictional Ontology (RTFO)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F11_Corporate_Body"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F1_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F27_Work_Creation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F28_Expression_Creation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F2_Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F3_Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="lrmoo:F5_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc-crm:E33_Linguistic_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvantTextualMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiographicalAvantText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiographicalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiographicalRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiographicalSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChapterPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContextualMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriticalEdition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriticalSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefinitiveExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Draft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Essay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalEntityCreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalLandscape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanRelationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterpretativeRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntertextualRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JournalEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LetterCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ListOfCharacters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManuscriptVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublishingHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealLandscape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimilarityRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sketch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymbolicRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextChunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextModificationEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextRelatedMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextualUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThematicRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraitRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraitType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Typescript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypescriptVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UndefinitiveExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolumeOfEssays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="lrmoo:R5_has_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P140_assigned_attribute_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P140i_was_attributed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeveloped"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEditor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpressionChapter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpressionTextSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFictionalAnalog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFinalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFinalTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHumanRelationType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspired"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPublisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRealAnalog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStateType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTextualReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTraitType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUndefinitiveExpression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDevelopedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEditorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFictionalAnalogOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFinalStateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFinalTraitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHumanRelationTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInspiredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLostStateBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLostTraitBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModifiedEventBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModifiedStateBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModifiedTraitBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isObjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOverriddenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParticipantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublicationPlaceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRealAnalogOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferredToBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStateTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStoredIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTextualReferenceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTraitTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOfRelationPropertyAssigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUndefinitiveExpressionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#losesState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#losesTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modifiesEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modifiesState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modifiesTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overrides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refersTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tookPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasPageSide"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasChapterTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNickname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSignature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSurname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTextContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isPreservedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CentroStudiGozzanoPavese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chapter_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chapter_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CreationCharacter_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#E_Manuscript_API10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#E_Typescript_FE16RomanziIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Einaudi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExpressionFragment_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrancoVaccaneo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_LaLunaEIFalo_Pinolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IntertextualReferenceAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M_Typescript_FE16RomanziIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NutoFictional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omega_edizioni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Page_API10288"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Page_API10289"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimilarityAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateRelation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateRelation_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateRelation_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SymbolicAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextChunk_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextChunk_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThematicAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Torino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TraitAssignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W_LaLunaEIFalo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#affiliation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carpenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#faith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#familyRalation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#floruit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#langKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nationality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#occupation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#personalityTrait"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phisicalTrait"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#residence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#soceStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#socialRelation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#waiter"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R16_created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R17_created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R19_created_a_realisation_of"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R3_is_realised_in"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R4_embodies"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R5i_is_component_of"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R76_is_derivative_of"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R7_exemplifies"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P13_destroyed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P4_has_time-span"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P176_starts_before_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P147i_was_curated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P76i_provides_access_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P95i_was_formed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P15_was_influenced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P145_separated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P20_had_specific_purpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P72_has_language"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P95_has_formed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P144i_gained_member_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P7_took_place_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P183_ends_before_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P35i_was_identified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P137_exemplifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P125i_was_type_of_object_used_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P48i_is_preferred_identifier_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P90a_has_lower_value_limit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P157i_provides_reference_space_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P195_was_a_presence_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P72i_is_language_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P168_place_is_defined_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P50i_is_current_keeper_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P102i_is_title_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P109_has_current_or_former_curator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P81b_begin_of_the_end"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P43i_is_dimension_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P143i_was_joined_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P180i_was_currency_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P185i_ends_after_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P8_took_place_on_or_within"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P80_end_is_qualified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P104_is_subject_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P186_produced_thing_of_product_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P92i_was_brought_into_existence_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P138i_has_representation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P167i_includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P187_has_production_plan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P169i_spacetime_volume_is_defined_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P89i_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P128i_is_carried_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P2_has_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P40i_was_observed_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P101_had_as_general_use"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P123i_resulted_from"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P90b_has_upper_value_limit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P197i_was_partially_covered_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P172_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P191i_was_duration_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P54_has_current_permanent_location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P5i_forms_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P173_starts_before_or_with_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P44_has_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P37_assigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P14_carried_out_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P184i_ends_with_or_after_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P190_has_symbolic_content"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P97_from_father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P34i_was_assessed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P126i_was_employed_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P46i_forms_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P12_occurred_in_the_presence_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P177_assigned_property_of_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P101i_was_use_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P164i_temporally_specifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P25_moved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P92_brought_into_existence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P156i_is_occupied_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P51i_is_former_or_current_owner_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P71_lists"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P70_documents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P171_at_some_place_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P29_custody_received_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P45i_is_incorporated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P166_was_a_presence_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P20i_was_purpose_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P3_has_note"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P9_consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P188_requires_production_tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P129_is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P5_consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P197_covered_parts_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P82b_end_of_the_end"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P29i_received_custody_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P166i_had_presence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P174_starts_before_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P38_deassigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P68i_use_foreseen_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P129i_is_subject_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P128_carries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P53i_is_former_or_current_location_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P106_is_composed_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P24i_changed_ownership_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P4i_is_time-span_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127_has_broader_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P42_assigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P180_has_currency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P19i_was_made_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P189_approximates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P137i_is_exemplified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P65_shows_visual_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P28_custody_surrendered_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P27i_was_origin_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P108_has_produced"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P62_depicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P165_incorporates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P97i_was_father_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P33i_was_used_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P50_has_current_keeper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P136_was_based_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P175_starts_before_or_with_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P130_shows_features_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P179i_was_sales_price_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P26i_was_destination_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P11_had_participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P113i_was_removed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P67_refers_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P1_is_identified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P41i_was_classified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P104i_applies_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P46_is_composed_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127i_has_narrower_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P121_overlaps_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P39i_was_measured_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P198i_is_held_or_supported_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P150i_defines_typical_wholes_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P102_has_title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P160_has_temporal_projection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P146_separated_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P142i_was_used_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P69i_is_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P150_defines_typical_parts_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P32i_was_technique_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P103i_was_intention_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P55i_currently_holds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P141i_was_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P107_has_current_or_former_member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P40_observed_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P54i_is_current_permanent_location_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P13i_was_destroyed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P86_falls_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P160i_is_temporal_projection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P126_employed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P24_transferred_title_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P23i_surrendered_title_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P75_possesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P32_used_general_technique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P146i_lost_member_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P187i_is_production_plan_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P91i_is_unit_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P176i_starts_after_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P28i_surrendered_custody_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P189i_is_approximated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P31i_was_modified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P74i_is_current_or_former_residence_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P21_had_general_purpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P16i_was_used_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P113_removed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P59_has_section"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P23_transferred_title_from"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P82_at_some_time_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P186i_is_produced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P70i_is_documented_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P144_joined_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P99i_was_dissolved_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P185_ends_before_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P17i_motivated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P161i_is_spatial_projection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P45_consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P86i_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P51_has_former_or_current_owner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P10_falls_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P71i_is_listed_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P130i_features_are_also_found_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P44i_is_condition_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P100_was_death_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P69_has_association_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P39_measured"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P19_was_intended_use_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P75i_is_possessed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P21i_was_purpose_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P111_added"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P11i_participated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P110_augmented"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P90_has_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P93i_was_taken_out_of_existence_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P34_concerned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P31_has_modified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P133_is_spatiotemporally_separated_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P76_has_contact_point"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P12i_was_present_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P107i_is_current_or_former_member_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P183i_starts_after_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P14i_performed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P195i_had_presence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P152_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P73i_is_translation_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P57_has_number_of_parts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P151i_participated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P175i_starts_after_or_with_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P100i_died_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P25i_moved_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P7i_witnessed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P41_classified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P1i_identifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P30_transferred_custody_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P37i_was_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P53_has_former_or_current_location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P65i_is_shown_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P91_has_unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P112i_was_diminished_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P165i_is_incorporated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P26_moved_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P73_has_translation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P96_by_mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P156_occupies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P94_has_created"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P132_spatiotemporally_overlaps_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P43_has_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P177i_is_type_of_property_assigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P42i_was_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P138_represents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P2i_is_type_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P198_holds_or_supports"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P174i_ends_after_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P170i_time_is_defined_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P125_used_object_of_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P135i_was_created_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P9i_forms_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P68_foresees_use_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P196i_is_defined_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P142_used_constituent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P10i_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P143_joined"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P122_borders_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P38i_was_deassigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P148i_is_component_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P103_was_intended_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P96i_gave_birth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P145i_left_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P182i_starts_after_or_with_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P79_beginning_is_qualified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P184_ends_before_or_with_the_end_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P106i_forms_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P139i_is_alternative_form_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P59i_is_located_on_or_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P8i_witnessed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P191_had_duration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P15i_influenced"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P99_dissolved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P62i_is_depicted_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P74_has_current_or_former_residence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P147_curated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P17_was_motivated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P52i_is_current_owner_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P93_took_out_of_existence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P167_was_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P49i_is_former_or_current_keeper_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P134_continued"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P98_brought_into_life"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P123_resulted_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P112_diminished"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P55_has_current_location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P82a_begin_of_the_begin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P22i_acquired_title_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P124_transformed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P81a_end_of_the_begin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P164_is_temporally_specified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P157_is_at_rest_relative_to"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc-crm:P81_ongoing_throughout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P161_has_spatial_projection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P196_defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P109i_is_current_or_former_curator_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P89_falls_within"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P16_used_specific_object"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P179_had_sales_price"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P56i_is_found_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P148_has_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P136i_supported_type_creation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P48_has_preferred_identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P33_used_specific_technique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P67i_is_referred_to_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P105i_has_right_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P27_moved_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P108i_was_produced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P98i_was_born"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P151_was_formed_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P124i_was_transformed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P22_transferred_title_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P94i_was_created_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P30i_custody_transferred_through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P49_has_former_or_current_keeper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P141_assigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P182_ends_before_or_with_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P56_bears_feature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P173i_ends_after_or_with_the_start_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P188i_is_production_tool_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P135_created_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P152i_is_parent_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P35_has_identified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P134i_was_continued_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P52_has_current_owner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P105_right_held_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P139_has_alternative_form"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P111i_was_added_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P110i_was_augmented_by"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Archive"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvantTextualMaterial"/>
+        <Class IRI="#UndefinitiveExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiographicalAvantText"/>
+        <Class IRI="#ContextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiographicalEvent"/>
+        <Class IRI="#RealEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiographicalRelation"/>
+        <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiographicalSource"/>
+        <Class IRI="#BiographicalAvantText"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chapter"/>
+        <Class abbreviatedIRI="cidoc-crm:E73_Information_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChapterPlan"/>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContextualMaterial"/>
+        <Class IRI="#AvantTextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriticalEdition"/>
+        <Class IRI="#CriticalSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriticalSource"/>
+        <Class abbreviatedIRI="lrmoo:F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefinitiveExpression"/>
+        <Class abbreviatedIRI="lrmoo:F2_Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diary"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Draft"/>
+        <Class IRI="#TextRelatedMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edition"/>
+        <Class abbreviatedIRI="lrmoo:F3_Manifestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Essay"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalBuilding"/>
+        <Class IRI="#FictionalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalCharacter"/>
+        <Class IRI="#FictionalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalCity"/>
+        <Class IRI="#FictionalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalEntity"/>
+        <Class abbreviatedIRI="cidoc-crm:E28_Conceptual_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalEntityCreation"/>
+        <Class abbreviatedIRI="cidoc-crm:E65_Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalEvent"/>
+        <Class IRI="#FictionalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalLandscape"/>
+        <Class IRI="#FictionalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalPlace"/>
+        <Class IRI="#FictionalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalEvent"/>
+        <Class IRI="#RealEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalSource"/>
+        <Class IRI="#BiographicalAvantText"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanRelation"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanRelationType"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterpretativeRelation"/>
+        <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntertextualRelation"/>
+        <Class IRI="#InterpretativeRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JournalEntry"/>
+        <Class IRI="#ContextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keyword"/>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Letter"/>
+        <Class IRI="#ContextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LetterCollection"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ListOfCharacters"/>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryProjectMaterial"/>
+        <Class IRI="#ContextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryReference"/>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <Class abbreviatedIRI="lrmoo:F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manuscript"/>
+        <Class abbreviatedIRI="lrmoo:F3_Manifestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManuscriptVersion"/>
+        <Class IRI="#DefinitiveExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManuscriptVersion"/>
+        <Class IRI="#TextRelatedMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novel"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class abbreviatedIRI="lrmoo:F11_Corporate_Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherSource"/>
+        <Class abbreviatedIRI="lrmoo:F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Page"/>
+        <Class abbreviatedIRI="lrmoo:F3_Manifestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishingHouse"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealBuilding"/>
+        <Class IRI="#RealPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealCity"/>
+        <Class IRI="#RealPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealEvent"/>
+        <Class abbreviatedIRI="cidoc-crm:E5_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealLandscape"/>
+        <Class IRI="#RealPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealPerson"/>
+        <Class abbreviatedIRI="cidoc-crm:E21_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealPlace"/>
+        <Class abbreviatedIRI="cidoc-crm:E53_Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimilarityRelation"/>
+        <Class IRI="#InterpretativeRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sketch"/>
+        <Class IRI="#LiteraryProjectMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateRelation"/>
+        <Class IRI="#BiographicalRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateType"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symbol"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymbolicRelation"/>
+        <Class IRI="#InterpretativeRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextChunk"/>
+        <Class abbreviatedIRI="cidoc-crm:E33_Linguistic_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextModificationEvent"/>
+        <Class abbreviatedIRI="lrmoo:F28_Expression_Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextRelatedMaterial"/>
+        <Class IRI="#AvantTextualMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextualUnit"/>
+        <Class IRI="#TextRelatedMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThematicRelation"/>
+        <Class IRI="#InterpretativeRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theme"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trait"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraitRelation"/>
+        <Class IRI="#BiographicalRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraitType"/>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Typescript"/>
+        <Class abbreviatedIRI="lrmoo:F3_Manifestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypescriptVersion"/>
+        <Class IRI="#DefinitiveExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypescriptVersion"/>
+        <Class IRI="#TextRelatedMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndefinitiveExpression"/>
+        <Class abbreviatedIRI="lrmoo:F2_Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolumeOfEssays"/>
+        <Class IRI="#CriticalSource"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#BiographicalSource"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiographicalSource"/>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiographicalSource"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiographicalSource"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archive"/>
+        <NamedIndividual IRI="#CentroStudiGozzanoPavese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPerson"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chapter"/>
+        <NamedIndividual IRI="#Chapter_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chapter"/>
+        <NamedIndividual IRI="#Chapter_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FictionalEntityCreation"/>
+        <NamedIndividual IRI="#CreationCharacter_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManuscriptVersion"/>
+        <NamedIndividual IRI="#E_Manuscript_API10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TypescriptVersion"/>
+        <NamedIndividual IRI="#E_Typescript_FE16RomanziIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PublishingHouse"/>
+        <NamedIndividual IRI="#Einaudi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="lrmoo:F2_Expression"/>
+        <NamedIndividual IRI="#ExpressionFragment_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPerson"/>
+        <NamedIndividual IRI="#FrancoVaccaneo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Edition"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="lrmoo:F5_Item"/>
+        <NamedIndividual IRI="#I_LaLunaEIFalo_Pinolo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Edition"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#IntertextualReferenceAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="lrmoo:F27_Work_Creation"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiographicalEvent"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalEntry"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalEntry"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Edition"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manuscript"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Typescript"/>
+        <NamedIndividual IRI="#M_Typescript_FE16RomanziIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FictionalCharacter"/>
+        <NamedIndividual IRI="#NutoFictional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PublishingHouse"/>
+        <NamedIndividual IRI="#Omega_edizioni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Page"/>
+        <NamedIndividual IRI="#Page_API10288"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Page"/>
+        <NamedIndividual IRI="#Page_API10289"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPerson"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="lrmoo:F28_Expression_Creation"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiographicalEvent"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#SimilarityAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SimilarityRelation"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#StateAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateRelation"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateRelation"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateRelation"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#SymbolicAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextChunk"/>
+        <NamedIndividual IRI="#TextChunk_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextChunk"/>
+        <NamedIndividual IRI="#TextChunk_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextModificationEvent"/>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualUnit"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#ThematicAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealCity"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cidoc-crm:E55_Type"/>
+        <NamedIndividual IRI="#TraitAssignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#W_LaLunaEIFalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#affiliation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#age"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#carpenter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#faith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HumanRelationType"/>
+        <NamedIndividual IRI="#familyRalation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#floruit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#gender"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#langKnowledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfCharacters"/>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#nationality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#occupation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TraitType"/>
+        <NamedIndividual IRI="#personalityTrait"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TraitType"/>
+        <NamedIndividual IRI="#phisicalTrait"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#residence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#sex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateType"/>
+        <NamedIndividual IRI="#soceStatus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HumanRelationType"/>
+        <NamedIndividual IRI="#socialRelation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#waiter"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+        <NamedIndividual IRI="#I_LaLunaEIFalo_Pinolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStoredIn"/>
+        <NamedIndividual IRI="#CentroStudiGozzanoPavese"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Chapter_1"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Chapter_10"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <NamedIndividual IRI="#CreationCharacter_1"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#modifiesState"/>
+        <NamedIndividual IRI="#CreationCharacter_1"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overrides"/>
+        <NamedIndividual IRI="#CreationCharacter_1"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDevelopedIn"/>
+        <NamedIndividual IRI="#ExpressionFragment_1"/>
+        <NamedIndividual IRI="#TextChunk_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+        <NamedIndividual IRI="#FrancoVaccaneo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+        <NamedIndividual IRI="#Omega_edizioni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+        <NamedIndividual IRI="#Einaudi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedIn"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <NamedIndividual IRI="#Einaudi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStoredIn"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+        <NamedIndividual IRI="#CentroStudiGozzanoPavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#M_Typescript_FE16RomanziIV"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParticipantOf"/>
+        <NamedIndividual IRI="#NutoFictional"/>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Page_API10288"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Page_API10289"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#SimilarityAssignment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasObject"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubject"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#NutoFictional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#SimilarityRelation_1"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+        <NamedIndividual IRI="#StateAssignment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasObject"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+        <NamedIndividual IRI="#carpenter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubject"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isStatedBy"/>
+        <NamedIndividual IRI="#StateRelation_1"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+        <NamedIndividual IRI="#StateAssignment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasObject"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+        <NamedIndividual IRI="#waiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubject"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+        <NamedIndividual IRI="#NutoFictional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+        <NamedIndividual IRI="#StateAssignment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasObject"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+        <NamedIndividual IRI="#carpenter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+        <NamedIndividual IRI="#TextChunk_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubject"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+        <NamedIndividual IRI="#NutoFictional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#TextChunk_1"/>
+        <NamedIndividual IRI="#Chapter_10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#TextChunk_2"/>
+        <NamedIndividual IRI="#Chapter_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#modifiesState"/>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+        <NamedIndividual IRI="#StateRelation_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overrides"/>
+        <NamedIndividual IRI="#TextModificationEvent_1"/>
+        <NamedIndividual IRI="#StateRelation_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAnnotatedIn"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+        <NamedIndividual IRI="#Page_API10288"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDevelopedIn"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+        <NamedIndividual IRI="#ExpressionFragment_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUndefinitiveExpression"/>
+        <NamedIndividual IRI="#W_LaLunaEIFalo"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStateType"/>
+        <NamedIndividual IRI="#carpenter"/>
+        <NamedIndividual IRI="#occupation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAnnotatedIn"/>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+        <NamedIndividual IRI="#Page_API10289"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStateType"/>
+        <NamedIndividual IRI="#waiter"/>
+        <NamedIndividual IRI="#occupation"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+        <Literal>Dedica di Pavese a Pinolo, scritta su una copia de La luna e i falò.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#BiographicalSource_1"/>
+        <Literal>«A Pinolo questo libro – forse l’ultimo che avrò mai scritto – dove si parla di lui, – dicendo scusa delle “invenzioni”!»</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#BiographicalSource_2"/>
+        <Literal>In nome suo sono venuti a trovarmi (io sono il personaggio Nuto del suo libro La luna e i falò) e continuano in modo crescente, donne e uomini di tutta Italia e dall&apos;estero. […] Qualcuno è anche venuto per curiosità, per il pettegolezzo, per vedere se veramente Nuto ha proprio il muso del gatto come Pavese mi ha descritto nella Luna e i falò.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNote"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+        <Literal>Da una carta autografa inedita di Pinolo Scaglione. Il brano ha il titolo &apos;L&apos;INIZIO DELLA LUNA E I FALÒ&apos;. Trascriscrizione a cura di Elena Solera.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
+        <Literal>Sono un artigiano di S. Stefano Belbo. Ho settanta anni. Mi chiamo Scaglione Giuseppe, ma qui mi chiamano Pinolo. Ho provato la città (Torino), ho suonato il clarinetto e diretto una banda composta di tutti miei allievi, per tanti anni, poi mi sono sposato e con mio fratello (sono figlio di falegname) mi sono messo a costruire bigonce, lavoro che faccio tutt&apos;ora. Ho trascorso una vita piuttosto tormentata; senza stenti, ma anche senza agi.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+        <Literal>IN SEGUITO DURANTE LE PASSEGGIATE ATTRAVERSO QUESTE COLLINE, DESCRIVEVO A CESARE VITA E MIRACOLI DI QUESTI CONTADINI, FATTI E FATTACCI AVVENUTI. HO AVUTO MODO DI PARLARGLI DELLA LUNA E DEI FALÒ E FARLO INCONTRARE CON ALCUNI TROVATELLI. QUESTO È DURATO UN PO&apos; DI TEMPO, E L&apos;ULTIMO RACCONTO È STATO A CASTINO: SEDUTO SOPRA QUEL MURICIUOLO LUNGO LA STR[A]DA CHE S[C]ENDE A CORTEMILIA DOVE CESARE MI HA DETTO: ADESSO DEL MATERIALE NE HO PER SCRIVERE DUE LIBRI. QUESTA È LA STORIA DELLA LUNA E I FALÒ.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+        <Literal>Cesare</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSurname"/>
+        <NamedIndividual IRI="#CesarePavese"/>
+        <Literal>Pavese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChapterTitle"/>
+        <NamedIndividual IRI="#Chapter_1"/>
+        <Literal>I</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChapterTitle"/>
+        <NamedIndividual IRI="#Chapter_10"/>
+        <Literal>X</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#FrancoVaccaneo"/>
+        <Literal>Franco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSurname"/>
+        <NamedIndividual IRI="#FrancoVaccaneo"/>
+        <Literal>Vaccaneo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#FumatoriDiCarta"/>
+        <Literal>Fumatori di carta. Nuto e Pavese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#IlMestiereDiVivere"/>
+        <Literal>Il mestiere di vivere. Diario 1935-1950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#IspirazioneLaLunaEIFalo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1949</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-10-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#JournalEntry_1"/>
+        <Literal>La luna e i falò. È il titolo presentito fin dai tempi del Dio-Caprone. Da sedici anni. Biaogna darcela tutta.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-11-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#JournalEntry_2"/>
+        <Literal>9 nov. finito la Luna e i Falò. Dal 18 sett. quando realmente Pavese iniziò la stesura del romanzo So-no meno di due mesi. Quasi sempre un capitolo al giorno. É certo l&apos;exploit più forte sinora. Se risponde, sei a posto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNote"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <Literal>Si tratta della seconda edizione dell&apos;ottobre 1950.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <Literal>La luna e i falò</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearMonth"/>
+        <NamedIndividual IRI="#M_LaLunaEIFalò"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYearMonth">1950-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSignature"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+        <Literal>API10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isPreservedIn"/>
+        <NamedIndividual IRI="#M_Manoscritto_API10"/>
+        <Literal>Fondo Sini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HasPageSide"/>
+        <NamedIndividual IRI="#Page_API10288"/>
+        <Literal>recto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSignature"/>
+        <NamedIndividual IRI="#Page_API10288"/>
+        <Literal>API10,288</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HasPageSide"/>
+        <NamedIndividual IRI="#Page_API10289"/>
+        <Literal>recto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSignature"/>
+        <NamedIndividual IRI="#Page_API10289"/>
+        <Literal>API10,289</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+        <Literal>Giuseppe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNickname"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+        <Literal>Pinolo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSurname"/>
+        <NamedIndividual IRI="#PinoloScaglione"/>
+        <Literal>Scaglione</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-09-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ScritturaManoscritto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-11-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#TextChunk_1"/>
+        <Literal>A Canelli entrai per un lungo viale che ai miei tempi non c’era, ma sentii subito l&apos;odore – quella punta di vinacce, di arietta di Belbo e di vermut. Le stradette erano le stesse, con quei fiori alle finestre, e le facce, i fotografi, le palazzine.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#TextChunk_2"/>
+        <Literal>C’è Nuto, il mio amico del Salto, che provvede di bigonce e di torchi tutta la valle fino a Camo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-06-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNote"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+        <Literal>Cassato con lapis rosso e affiancato dal disegno di una casa datato 8 giugno. Lo stesso appunto era apparso con una variante tra le carte di Tra donne sole, accanto allo schizzo di una casa.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#TextualUnit_1"/>
+        <Literal>odor di Canelli 
+punta di mosto (vermut) 
+di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#W_LaLunaEIFalo"/>
+        <Literal>La luna e i falò</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1949-10-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTextContent"/>
+        <NamedIndividual IRI="#listOfCharacters_1"/>
+        <Literal>Teresa con Nuto tresca. a Genova ratto. Il padre li va a prendere e li sposa. Vanno in America Sud con soldi di Vincenzo Nuto fa il cameriere sul treno Teresa viveva in capanna Il padre va a prenderla Intanto Nuto fa fortuna e la richiama</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P177_assigned_property_of_type"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P14_carried_out_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExpressionChapter"/>
+        <ObjectProperty abbreviatedIRI="lrmoo:R5_has_component"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExpressionTextSegment"/>
+        <ObjectProperty abbreviatedIRI="lrmoo:R5_has_component"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFictionalAnalog"/>
+        <ObjectProperty IRI="#hasInspired"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHumanRelationType"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127_has_broader_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P141_assigned"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P11_had_participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRealAnalog"/>
+        <ObjectProperty IRI="#hasInspired"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSource"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P17_was_motivated_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStateType"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127_has_broader_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubject"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P140_assigned_attribute_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTraitType"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127_has_broader_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFictionalAnalogOf"/>
+        <ObjectProperty IRI="#isInspiredBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHumanRelationTypeOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127i_has_narrower_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isObjectOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P141i_was_assigned_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isParticipantOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P11i_participated_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRealAnalogOf"/>
+        <ObjectProperty IRI="#isInspiredBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSourceOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P17i_motivated"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStateTypeOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127i_has_narrower_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubjectOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P140i_was_attributed_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTraitTypeOf"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P127i_has_narrower_term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTypeOfRelationPropertyAssigned"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P177i_is_type_of_property_assigned"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performed"/>
+        <ObjectProperty abbreviatedIRI="cidoc-crm:P14i_performed"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+        <ObjectProperty IRI="#isTypeOfRelationPropertyAssigned"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <ObjectProperty IRI="#performed"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <ObjectProperty IRI="#isAnnotatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDeveloped"/>
+        <ObjectProperty IRI="#isDevelopedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEditor"/>
+        <ObjectProperty IRI="#isEditorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFinalState"/>
+        <ObjectProperty IRI="#isFinalStateOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFinalTrait"/>
+        <ObjectProperty IRI="#isFinalTraitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasHumanRelationType"/>
+        <ObjectProperty IRI="#isHumanRelationTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInspired"/>
+        <ObjectProperty IRI="#isInspiredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectProperty IRI="#isObjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <ObjectProperty IRI="#isParticipantOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <ObjectProperty IRI="#isPublicationPlaceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSource"/>
+        <ObjectProperty IRI="#isSourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStated"/>
+        <ObjectProperty IRI="#isStatedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStatement"/>
+        <ObjectProperty IRI="#isStatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubject"/>
+        <ObjectProperty IRI="#isSubjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTextualReference"/>
+        <ObjectProperty IRI="#isTextualReferenceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasUndefinitiveExpression"/>
+        <ObjectProperty IRI="#isUndefinitiveExpressionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLocationOf"/>
+        <ObjectProperty IRI="#tookPlaceIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLostStateBy"/>
+        <ObjectProperty IRI="#losesState"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLostTraitBy"/>
+        <ObjectProperty IRI="#losesTrait"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isModifiedEventBy"/>
+        <ObjectProperty IRI="#modifiesEvent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isModifiedStateBy"/>
+        <ObjectProperty IRI="#modifiesState"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isModifiedTraitBy"/>
+        <ObjectProperty IRI="#modifiesTrait"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOverriddenBy"/>
+        <ObjectProperty IRI="#overrides"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isStoredIn"/>
+        <ObjectProperty IRI="#stores"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isSimilarTo"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isDevelopedIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <Class IRI="#Page"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinalState"/>
+        <Class IRI="#FictionalCharacter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinalTrait"/>
+        <Class IRI="#FictionalCharacter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <Class IRI="#Edition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#Edition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStated"/>
+        <Class IRI="#RealPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class IRI="#RealPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFictionalAnalogOf"/>
+        <Class IRI="#FictionalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStoredIn"/>
+        <ObjectUnionOf>
+            <Class IRI="#Manuscript"/>
+            <Class IRI="#Page"/>
+            <Class IRI="#Typescript"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalCharacter"/>
+            <Class IRI="#RealPerson"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cidoc-crm:E5_Event"/>
+            <Class IRI="#FictionalEvent"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#RealPerson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinalState"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinalTrait"/>
+        <Class IRI="#Trait"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPublicationPlace"/>
+        <Class IRI="#RealCity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#PublishingHouse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUndefinitiveExpression"/>
+        <Class IRI="#UndefinitiveExpression"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAnnotatedIn"/>
+        <Class IRI="#Page"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStoredIn"/>
+        <Class IRI="#Archive"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tookPlaceIn"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalPlace"/>
+            <Class IRI="#RealPlace"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNote"/>
+        <DataProperty abbreviatedIRI="cidoc-crm:P3_has_note"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#HasPageSide"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasChapterTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLanguage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNickname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNote"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSignature"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSurname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTextContent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYear"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearMonth"/>
+        <Datatype abbreviatedIRI="xsd:gYearMonth"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isPreservedIn"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Stati condivisi</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RealPerson"/>
+                <Variable IRI="#rp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+                <Variable IRI="#assign1"/>
+                <NamedIndividual IRI="#StateAssignment"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+                <Variable IRI="#assign2"/>
+                <NamedIndividual IRI="#StateAssignment"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Tratti condivisi</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RealPerson"/>
+                <Variable IRI="#rp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+                <Variable IRI="#assign1"/>
+                <NamedIndividual IRI="#TraitAssignment"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+                <Variable IRI="#assign2"/>
+                <NamedIndividual IRI="#TraitAssignment"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Stati finali e stati persi</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#TextModificationEvent"/>
+                <Variable IRI="#tme"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#overrides"/>
+                <Variable IRI="#tme"/>
+                <Variable IRI="#assign1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#newState"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#modifiesState"/>
+                <Variable IRI="#tme"/>
+                <Variable IRI="#assign2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#oldState"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFinalState"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#newState"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#losesState"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#oldState"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Tratti finali e tratti persi</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#TextModificationEvent"/>
+                <Variable IRI="#tme"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#overrides"/>
+                <Variable IRI="#tme"/>
+                <Variable IRI="#assign1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
+                <Variable IRI="#assign2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign2"/>
+                <Variable IRI="#newTrait"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#modifiesTrait"/>
+                <Variable IRI="#tme"/>
+                <Variable IRI="#assign2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#assign1"/>
+                <Variable IRI="#oldTrait"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFinalTrait"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#newTrait"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#losesState"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#oldTrait"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Analogo finzionale</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RealPerson"/>
+                <Variable IRI="#rp"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSource"/>
+                <Variable IRI="#assignemnt"/>
+                <Variable IRI="#doc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable IRI="#stmt"/>
+                <Variable IRI="#fc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasObject"/>
+                <Variable IRI="#stmt"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#assignsRelationPropertyOfType"/>
+                <Variable IRI="#stmt"/>
+                <NamedIndividual IRI="#SimilarityAssignment"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFictionalAnalogOf"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Tratti o stati condivisi = ispirazione</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FictionalCharacter"/>
+                <Variable IRI="#fc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RealPerson"/>
+                <Variable IRI="#rp"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sharesTraitOrStateWith"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isInspiredBy"/>
+                <Variable IRI="#fc"/>
+                <Variable IRI="#rp"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Archive</IRI>
+        <Literal>An organized and systematic collection of information fixed on a medium and of different nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Archive</IRI>
+        <Literal xml:lang="en">Archive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AvantTextualMaterial</IRI>
+        <Literal>It includes all the materials of the avant-text, that is, the set of materials that precede the final version of a literary text. These materials may include drafts, notes, sketches, notes, variants of writing, corrections, letters, and any other document that contributed to the genesis and development of the work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AvantTextualMaterial</IRI>
+        <Literal xml:lang="en">Avant-textual material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiographicalAvantText</IRI>
+        <Literal>Documentary materials, but which due to their relevance in the interpretation of the genesis of the text are rightfully included in the contextual avant-text materials, including the oral avant-text, the village stories, transcribed or told by Pinolo Scaglione to Cesare Pavese, which influenced the work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiographicalAvantText</IRI>
+        <Literal xml:lang="en">Biographical vant-text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiographicalEvent</IRI>
+        <Literal>All biographical events that happened to a real person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiographicalEvent</IRI>
+        <Literal xml:lang="en">Biographical Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiographicalRelation</IRI>
+        <Literal>An assertion that has as its type a biographical relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiographicalRelation</IRI>
+        <Literal xml:lang="en">Biographical Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiographicalSource</IRI>
+        <Literal>Documentary materials linked to the biography of the author such as the oral avant-text, the village stories, transcribed or told by Pinolo Scaglione to Cesare Pavese, which influenced the work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiographicalSource</IRI>
+        <Literal xml:lang="en">Biographical Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chapter</IRI>
+        <Literal>A chapter of a document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chapter</IRI>
+        <Literal xml:lang="en">Chapter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChapterPlan</IRI>
+        <Literal>The outlines, the divisions into chapters hypothesized by the author.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChapterPlan</IRI>
+        <Literal xml:lang="en">Chapter Plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContextualMaterial</IRI>
+        <Literal>Materials that serve to interpret the writing process, inspiration and genesis and themes of the work. That which has no direct connection with the text but concerns the genesis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ContextualMaterial</IRI>
+        <Literal xml:lang="en">Contextual Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CriticalEdition</IRI>
+        <Literal>L&apos;edizione critica di un&apos;opera letteraria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriticalEdition</IRI>
+        <Literal xml:lang="en">Critical Edition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriticalSource</IRI>
+        <Literal xml:lang="en">Critical Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DefinitiveExpression</IRI>
+        <Literal>Represents a complete expression of a work. This class may include final version of a manuscript, a typescript, a printed text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DefinitiveExpression</IRI>
+        <Literal xml:lang="en">Definitive Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Diary</IRI>
+        <Literal xml:lang="en">Diary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Draft</IRI>
+        <Literal>More developed text layouts than text annotations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Draft</IRI>
+        <Literal xml:lang="en">Draft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R76_is_derivative_of"/>
+        <IRI>#E_Typescript_FE16RomanziIV</IRI>
+        <IRI>#E_Manuscript_API10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Edition</IRI>
+        <Literal>Publication of a printed work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Edition</IRI>
+        <Literal xml:lang="en">Edition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Essay</IRI>
+        <Literal xml:lang="en">Essay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R5i_is_component_of"/>
+        <IRI>#ExpressionFragment_1</IRI>
+        <IRI>#E_Manuscript_API10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalBuilding</IRI>
+        <Literal>It includes all the fictional buildings present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalBuilding</IRI>
+        <Literal xml:lang="en">Fictional Building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalCharacter</IRI>
+        <Literal>It includes all the fictional characters present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalCharacter</IRI>
+        <Literal xml:lang="en">Fictional Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalCity</IRI>
+        <Literal>It includes all the fictional cities present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalCity</IRI>
+        <Literal xml:lang="en">Fictional City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalEntity</IRI>
+        <Literal>It includes all fictional entities (characters, places and events) present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalEntity</IRI>
+        <Literal xml:lang="en">Fictional Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalEntityCreation</IRI>
+        <Literal>The activity of creating a character, place, event in the creative process of writing a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalEntityCreation</IRI>
+        <Literal xml:lang="en">Fictional Entity Creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalEvent</IRI>
+        <Literal>It includes all fictional events present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalEvent</IRI>
+        <Literal xml:lang="en">Fictional Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalLandscape</IRI>
+        <Literal>It includes all the fictional landscapes present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalLandscape</IRI>
+        <Literal xml:lang="en">Fictional Landscape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FictionalPlace</IRI>
+        <Literal>It includes all the fictional places present in a literary work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalPlace</IRI>
+        <Literal xml:lang="en">Fictional Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasPageSide</IRI>
+        <Literal xml:lang="en">has Page Side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HistoricalEvent</IRI>
+        <Literal>All historical events that happened in history.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HistoricalEvent</IRI>
+        <Literal xml:lang="en">Historical Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HistoricalSource</IRI>
+        <Literal>Documentary materials linked to the author about historical events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HistoricalSource</IRI>
+        <Literal xml:lang="en">Historical Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanRelation</IRI>
+        <Literal>Defines specific types of human relationships, e.g., friend, colleague, parent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HumanRelation</IRI>
+        <Literal xml:lang="en">Human Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanRelationType</IRI>
+        <Literal>Represents relationships between humans, such as friendships, collaborations, or family ties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HumanRelationType</IRI>
+        <Literal xml:lang="en">Human Relation Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R7_exemplifies"/>
+        <IRI>#I_LaLunaEIFalo_Pinolo</IRI>
+        <IRI>#M_LaLunaEIFalò</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InterpretativeRelation</IRI>
+        <Literal>An assertion that has as its type an interpretative relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InterpretativeRelation</IRI>
+        <Literal xml:lang="en">Interpretative Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IntertextualRelation</IRI>
+        <Literal>An assertion that has as its type a relationship intertextually linking two entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntertextualRelation</IRI>
+        <Literal xml:lang="en">Intertextual Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R16_created"/>
+        <IRI>#IspirazioneLaLunaEIFalo</IRI>
+        <IRI>#W_LaLunaEIFalo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#JournalEntry</IRI>
+        <Literal>The daily diary notes identified as part of the process of genesis of the work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JournalEntry</IRI>
+        <Literal xml:lang="en">Journal Entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Keyword</IRI>
+        <Literal>The keywords, the lexical elements disconnected from drafts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Keyword</IRI>
+        <Literal xml:lang="en">Keyword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Letter</IRI>
+        <Literal>The letters identified as part of the process of genesis of the work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Letter</IRI>
+        <Literal xml:lang="en">Letter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LetterCollection</IRI>
+        <Literal xml:lang="en">Letter Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ListOfCharacters</IRI>
+        <Literal>The annotated character lists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ListOfCharacters</IRI>
+        <Literal xml:lang="en">List Of Characters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LiteraryProjectMaterial</IRI>
+        <Literal>Materials that have no direct relation to the specific content of the text but support overall creative development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LiteraryProjectMaterial</IRI>
+        <Literal xml:lang="en">Literary Project Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LiteraryReference</IRI>
+        <Literal>The intertextual connections with other literary works made explicit by the author.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LiteraryReference</IRI>
+        <Literal xml:lang="en">Literary Reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LiteraryWork</IRI>
+        <Literal>Una creazione artistica scritta, che può essere di vario genere.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LiteraryWork</IRI>
+        <Literal xml:lang="en">Literary Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R4_embodies"/>
+        <IRI>#M_LaLunaEIFalò</IRI>
+        <IRI>#E_Typescript_FE16RomanziIV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R4_embodies"/>
+        <IRI>#M_Manoscritto_API10</IRI>
+        <IRI>#E_Manuscript_API10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R4_embodies"/>
+        <IRI>#M_Typescript_FE16RomanziIV</IRI>
+        <IRI>#E_Typescript_FE16RomanziIV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manuscript</IRI>
+        <Literal>Any non-printed, handwritten text that comes from the hands of the author or a copyist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manuscript</IRI>
+        <Literal xml:lang="en">Manuscript</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManuscriptVersion</IRI>
+        <Literal>A complete version of a manuscript.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManuscriptVersion</IRI>
+        <Literal xml:lang="en">Manuscript Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Novel</IRI>
+        <Literal>Testo narrativo in prosa, di una certa ampiezza che tratta di vicende reali o fantastiche.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Novel</IRI>
+        <Literal xml:lang="en">Novel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal>Association of people connected together in an organic structure to cooperate towards a common goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OtherSource</IRI>
+        <Literal xml:lang="en">Other Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Page</IRI>
+        <Literal>The physical sheet, written or printed, is part of the file. The front side is distinguished on both sides, recto, and verso, the back side.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Page</IRI>
+        <Literal xml:lang="en">Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PublishingHouse</IRI>
+        <Literal>Company or association whose principal activity consists in the production and distribution of books, periodicals or printed texts in general.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PublishingHouse</IRI>
+        <Literal xml:lang="en">Publishing House</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealBuilding</IRI>
+        <Literal>All buildings that really exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealBuilding</IRI>
+        <Literal xml:lang="en">Real Building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealCity</IRI>
+        <Literal>All cities that really exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealCity</IRI>
+        <Literal xml:lang="en">Real City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealEvent</IRI>
+        <Literal>All events that happened in reality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealEvent</IRI>
+        <Literal xml:lang="en">Real Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealLandscape</IRI>
+        <Literal>All landscapes that really exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealLandscape</IRI>
+        <Literal xml:lang="en">Real Landscape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealPerson</IRI>
+        <Literal>People that really existed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealPerson</IRI>
+        <Literal xml:lang="en">Real Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealPlace</IRI>
+        <Literal>All places that really exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealPlace</IRI>
+        <Literal xml:lang="en">Real Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R17_created"/>
+        <IRI>#ScritturaManoscritto</IRI>
+        <IRI>#E_Manuscript_API10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R19_created_a_realisation_of"/>
+        <IRI>#ScritturaManoscritto</IRI>
+        <IRI>#W_LaLunaEIFalo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SimilarityRelation</IRI>
+        <Literal>An assertion that has as its type a relationship that links two entities by similarity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SimilarityRelation</IRI>
+        <Literal xml:lang="en">Similarity Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sketch</IRI>
+        <Literal>Schemes, diagrams, iconographic elements, not necessarily textual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sketch</IRI>
+        <Literal xml:lang="en">Sketch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#State</IRI>
+        <Literal>Characteristics or states which hold true only at a specific time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#State</IRI>
+        <Literal xml:lang="en">State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StateRelation</IRI>
+        <Literal>An assertion that has as its type a relationship that assigns a state to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StateRelation</IRI>
+        <Literal>State Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StateType</IRI>
+        <Literal>Indicates the state or condition of an entity, such as affiliation, age, gender, occupation etc...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StateType</IRI>
+        <Literal xml:lang="en">State Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Symbol</IRI>
+        <Literal>Represents a symbol or sign that may have a specific meaning in a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symbol</IRI>
+        <Literal xml:lang="en">Symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SymbolicRelation</IRI>
+        <Literal>An assertion that has as its type a relationship that link two entities by a symbol.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymbolicRelation</IRI>
+        <Literal xml:lang="en">Symbolic Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TextChunk</IRI>
+        <Literal>A passage of text that ends with a full stop, without any particular logical or rhetorical connotations, such as a paragraph might.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TextChunk</IRI>
+        <Literal xml:lang="en">Text chunk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TextModificationEvent</IRI>
+        <Literal>The event of changing the version of one text to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TextModificationEvent</IRI>
+        <Literal xml:lang="en">Text Modification Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TextRelatedMaterial</IRI>
+        <Literal>Materials that are closely related to the text and that present versions, revisions or drafts that are immediately traceable to the final text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TextRelatedMaterial</IRI>
+        <Literal xml:lang="en">Text-related Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TextualUnit</IRI>
+        <Literal>The intellectual content of the working notes of the foreword materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TextualUnit</IRI>
+        <Literal xml:lang="en">Textual Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThematicRelation</IRI>
+        <Literal>An assertion that has as its type a relationship that link two entities by a theme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThematicRelation</IRI>
+        <Literal xml:lang="en">Thematic Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal>Refers to a main literary theme or topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Theme</IRI>
+        <Literal xml:lang="en">Theme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trait</IRI>
+        <Literal>Characteristics or traits which do not, by and large, change over time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Trait</IRI>
+        <Literal xml:lang="en">Trait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TraitRelation</IRI>
+        <Literal>An assertion that has as its type a relationship that attributes a trait to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TraitRelation</IRI>
+        <Literal xml:lang="en">Trait Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TraitType</IRI>
+        <Literal>Defines the types of traits, e.g., physical traits, personality traits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TraitType</IRI>
+        <Literal xml:lang="en">Trait Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Typescript</IRI>
+        <Literal>Written with a typewriter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Typescript</IRI>
+        <Literal xml:lang="en">Typescript</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TypescriptVersion</IRI>
+        <Literal>A complete version of a typescript.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TypescriptVersion</IRI>
+        <Literal xml:lang="en">Typescript Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UndefinitiveExpression</IRI>
+        <Literal>Represents a non-final or intermediate expression of a work. This class may include drafts, notes, annotations, text fragments, and other preparatory materials that do not yet constitute a complete or final expression of F1_Work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UndefinitiveExpression</IRI>
+        <Literal xml:lang="en">Undefinitive Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VolumeOfEssays</IRI>
+        <Literal>Un volume, una miscellanea che raccoglie saggi o articoli editi o inediti.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VolumeOfEssays</IRI>
+        <Literal xml:lang="en">Volume Of Essays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R3_is_realised_in"/>
+        <IRI>#W_LaLunaEIFalo</IRI>
+        <IRI>#E_Manuscript_API10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="lrmoo:R3_is_realised_in"/>
+        <IRI>#W_LaLunaEIFalo</IRI>
+        <IRI>#E_Typescript_FE16RomanziIV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assignsRelationPropertyOfType</IRI>
+        <Literal xml:lang="en">assigns Relation Property Of Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#carriedOutBy</IRI>
+        <Literal xml:lang="en">carried Out By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotation</IRI>
+        <Literal xml:lang="en">has Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAuthor</IRI>
+        <Literal xml:lang="en">has Author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasChapterTitle</IRI>
+        <Literal xml:lang="en">has Chapter Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDate</IRI>
+        <Literal xml:lang="en">has Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDescription</IRI>
+        <Literal>has Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDeveloped</IRI>
+        <Literal>Indicates that a piece develops from an annotation, representing a relationship of temporal or logical derivation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDeveloped</IRI>
+        <Literal xml:lang="en">has Developed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEditor</IRI>
+        <Literal xml:lang="en">has Editor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFictionalAnalog</IRI>
+        <Literal xml:lang="en">has Fictional Analog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFinalState</IRI>
+        <Literal xml:lang="en">has Final State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFinalTrait</IRI>
+        <Literal xml:lang="en">has Final Trait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHumanRelationType</IRI>
+        <Literal xml:lang="en">has Human Relation Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInspired</IRI>
+        <Literal xml:lang="en">has Inspired</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLanguage</IRI>
+        <Literal>has Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasName</IRI>
+        <Literal xml:lang="en">has Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNickname</IRI>
+        <Literal xml:lang="en">has Nickname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNote</IRI>
+        <Literal xml:lang="en">has Note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasObject</IRI>
+        <Literal xml:lang="en">has Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPage</IRI>
+        <Literal xml:lang="en">has Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">has Part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasParticipant</IRI>
+        <Literal xml:lang="en">has Participant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPublicationPlace</IRI>
+        <Literal xml:lang="en">has Publication Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPublisher</IRI>
+        <Literal xml:lang="en">has Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRealAnalog</IRI>
+        <Literal xml:lang="en">has Real Analog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSignature</IRI>
+        <Literal xml:lang="en">has Signature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSource</IRI>
+        <Literal xml:lang="en">has Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStateType</IRI>
+        <Literal xml:lang="en">has State Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStated</IRI>
+        <Literal xml:lang="en">has Stated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStatement</IRI>
+        <Literal xml:lang="en">has Statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubject</IRI>
+        <Literal xml:lang="en">has Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSurname</IRI>
+        <Literal xml:lang="en">has Surname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTextContent</IRI>
+        <Literal xml:lang="en">has Text Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTextualReference</IRI>
+        <Literal>Connect a statement to a passage of a text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTextualReference</IRI>
+        <Literal xml:lang="en">has Textual Reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTitle</IRI>
+        <Literal xml:lang="en">has Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTraitType</IRI>
+        <Literal xml:lang="en">has Trait Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasUndefinitiveExpression</IRI>
+        <Literal xml:lang="en">has Undefinitive Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasYear</IRI>
+        <Literal xml:lang="en">has Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasYearMonth</IRI>
+        <Literal xml:lang="en">has Year Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotatedIn</IRI>
+        <Literal xml:lang="en">is Annotated In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAuthorOf</IRI>
+        <Literal xml:lang="en">is Author Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDevelopedIn</IRI>
+        <Literal xml:lang="en">is Developed In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isEditorOf</IRI>
+        <Literal>is Editor Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFictionalAnalogOf</IRI>
+        <Literal>Connects an entity present in a fiction work and an entity present in the real world, regardless of the degree of variation between the characteristics of the entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFictionalAnalogOf</IRI>
+        <Literal xml:lang="en">is Fictional Analog Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFinalStateOf</IRI>
+        <Literal xml:lang="en">is Final State Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFinalTraitOf</IRI>
+        <Literal xml:lang="en">is Final Trait Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isHumanRelationTypeOf</IRI>
+        <Literal xml:lang="en">is Human Relation Type Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInspiredBy</IRI>
+        <Literal xml:lang="en">is Inspired By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLocationOf</IRI>
+        <Literal xml:lang="en">is Location Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLostStateBy</IRI>
+        <Literal xml:lang="en">is Lost State By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLostTraitBy</IRI>
+        <Literal xml:lang="en">is Lost Trait By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isModifiedEventBy</IRI>
+        <Literal xml:lang="en">is Modified Event By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isModifiedStateBy</IRI>
+        <Literal>is Modified Trait By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isModifiedTraitBy</IRI>
+        <Literal xml:lang="en">is Modified Trait By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isObjectOf</IRI>
+        <Literal xml:lang="en">is Object Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOverriddenBy</IRI>
+        <Literal xml:lang="en">is Overridden By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPartOf</IRI>
+        <Literal xml:lang="en">is Part Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isParticipantOf</IRI>
+        <Literal xml:lang="en">is Participant Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPreservedIn</IRI>
+        <Literal xml:lang="en">is Preserved In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPublicationPlaceOf</IRI>
+        <Literal xml:lang="en">is Publication Place Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPublisherOf</IRI>
+        <Literal xml:lang="en">is Publisher Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRealAnalogOf</IRI>
+        <Literal>Mette in relazione entità presenti nel mondo reale ed entità presenti in un&apos;opera di finzione, indipendentemente dal grado di variazione tra le caratteristiche delle entità.Connects an entity present in the real world and an entity present in a fiction work, regardless of the degree of variation between the characteristics of the entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRealAnalogOf</IRI>
+        <Literal xml:lang="en">is Real Analog Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isReferredToBy</IRI>
+        <Literal>Connects an entity to the text that mentioned it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isReferredToBy</IRI>
+        <Literal xml:lang="en">is Referred To By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSimilarTo</IRI>
+        <Literal xml:lang="en">is Similar To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSourceOf</IRI>
+        <Literal xml:lang="en">is Source Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStateTypeOf</IRI>
+        <Literal xml:lang="en">is State Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStatedBy</IRI>
+        <Literal xml:lang="en">is Stated By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStatedIn</IRI>
+        <Literal xml:lang="en">is Stated In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStoredIn</IRI>
+        <Literal xml:lang="en">is Stored In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSubjectOf</IRI>
+        <Literal xml:lang="en">is Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTextualReferenceOf</IRI>
+        <Literal xml:lang="en">is Textual Reference Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTraitTypeOf</IRI>
+        <Literal xml:lang="en">is Trait Type Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTypeOfRelationPropertyAssigned</IRI>
+        <Literal xml:lang="en">is Type Of Relation Property Assigned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#overrides</IRI>
+        <Literal xml:lang="en">overrides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#performed</IRI>
+        <Literal xml:lang="en">performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refersTo</IRI>
+        <Literal>Connects a text to an entity, mentioned there.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#refersTo</IRI>
+        <Literal xml:lang="en">refers To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sharesTraitOrStateWith</IRI>
+        <Literal xml:lang="en">shares Trait Or State With</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stores</IRI>
+        <Literal xml:lang="en">stores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tookPlaceIn</IRI>
+        <Literal xml:lang="en">took Place In</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
