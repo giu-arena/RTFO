@@ -19,8 +19,8 @@
     <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="cidoc-crm" IRI="http://www.cidoc-crm.org/cidoc-crm/"/>
-    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/rtfo_ontology/external-ontologies/LRMoo_v1.0.rdf</Import>
-    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/rtfo_ontology/external-ontologies/CIDOC_CRM_v7.1.3.rdf</Import>
+    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/main/rtfo_ontology/external-ontologies/LRMoo_v1.0.rdf</Import>
+    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/main/rtfo_ontology/external-ontologies/CIDOC_CRM_v7.1.3.rdf</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>An ontology to describe the dynamic relationship between reality and fiction in literary works, with a focus on preparatory materials and their influence on narrative construction.</Literal>
