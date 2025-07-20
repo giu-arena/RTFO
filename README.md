@@ -1,2 +1,2 @@
 # RTFO (Real-To-Fictional Ontology)
-This is the development repo of RTFO, an OWL2 ontology for the description and interpretation of the genesis of Pavese's La luna e i falò
+This is the development repo of RTFO, an OWL2 ontology for the description of the dynamic relationship between reality and fiction in literary works, with a focus on preparatory materials and their influence on narrative construction. The ontology is applied to the case study of Cesare Pavese’s La luna e i falò, with a particular focus on the biographical avant-texts of Pinolo Scaglione, the real-life friend who inspired key aspects of the novel.
