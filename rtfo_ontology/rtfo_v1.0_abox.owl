@@ -19,8 +19,8 @@
     <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="cidoc-crm" IRI="http://www.cidoc-crm.org/cidoc-crm/"/>
-    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/main/rtfo_ontology/external-ontologies/LRMoo_v1.0.rdf</Import>
     <Import>https://raw.githubusercontent.com/giu-arena/RTFO/main/rtfo_ontology/external-ontologies/CIDOC_CRM_v7.1.3.rdf</Import>
+    <Import>https://raw.githubusercontent.com/giu-arena/RTFO/main/rtfo_ontology/external-ontologies/LRMoo_v1.0.rdf</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>An ontology to describe the dynamic relationship between reality and fiction in literary works, with a focus on preparatory materials and their influence on narrative construction.</Literal>
@@ -271,7 +271,7 @@
         <Class IRI="#RealPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RealToFictionalTrasformation"/>
+        <Class IRI="#RealToFictionalTransformation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RelationType"/>
@@ -1288,7 +1288,7 @@
         <ObjectProperty IRI="#hasSubject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAnnotatedIn"/>
@@ -1360,7 +1360,7 @@
         <ObjectProperty IRI="#isSubjectOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isTrasformationIncludedIn"/>
+        <ObjectProperty IRI="#isTransformationIncludedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTypeOfRelationPropertyAssigned"/>
@@ -1834,19 +1834,19 @@
         <NamedIndividual IRI="#Pub_Chapter_5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_4"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_5"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Santina_fictional"/>
@@ -2316,7 +2316,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#RealToFictionalTrasformation"/>
+        <Class IRI="#RealToFictionalTransformation"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="cidoc-crm:E12_Production"/>
             <ObjectAllValuesFrom>
@@ -3375,24 +3375,24 @@
         <NamedIndividual IRI="#Pub_Chapter_5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealToFictionalTrasformation"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <Class IRI="#RealToFictionalTransformation"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealToFictionalTrasformation"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <Class IRI="#RealToFictionalTransformation"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealToFictionalTrasformation"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <Class IRI="#RealToFictionalTransformation"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealToFictionalTrasformation"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_4"/>
+        <Class IRI="#RealToFictionalTransformation"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealToFictionalTrasformation"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_5"/>
+        <Class IRI="#RealToFictionalTransformation"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FictionalCharacter"/>
@@ -4315,19 +4315,19 @@
         <NamedIndividual IRI="#BiographicalSource_7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
         <NamedIndividual IRI="#FictionalEntityCreation_1"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
         <NamedIndividual IRI="#FictionalEntityCreation_1"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
         <NamedIndividual IRI="#FictionalEntityCreation_1"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cidoc-crm:P94_has_created"/>
@@ -4340,9 +4340,9 @@
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
         <NamedIndividual IRI="#FictionalEntityCreation_2"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cidoc-crm:P50_has_current_keeper"/>
@@ -4961,77 +4961,77 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carriedOutBy"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#modifiesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
         <NamedIndividual IRI="#StateRelation_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#overridesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_1"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_1"/>
         <NamedIndividual IRI="#StateRelation_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carriedOutBy"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#modifiesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
         <NamedIndividual IRI="#HumanRelation_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#overridesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_2"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_2"/>
         <NamedIndividual IRI="#HumanRelation_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carriedOutBy"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#modifiesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
         <NamedIndividual IRI="#StateRelation_4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#overridesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_3"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_3"/>
         <NamedIndividual IRI="#StateRelation_5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carriedOutBy"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_4"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_4"/>
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#modifiesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_4"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_4"/>
         <NamedIndividual IRI="#EventRelation_3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#overridesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_4"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_4"/>
         <NamedIndividual IRI="#EventRelation_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carriedOutBy"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_5"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_5"/>
         <NamedIndividual IRI="#CesarePavese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#modifiesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_5"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_5"/>
         <NamedIndividual IRI="#EventRelation_4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#overridesAttribution"/>
-        <NamedIndividual IRI="#RealToFictionalTrasformation_5"/>
+        <NamedIndividual IRI="#RealToFictionalTransformation_5"/>
         <NamedIndividual IRI="#EventRelation_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -5153,6 +5153,11 @@
         <ObjectProperty IRI="#hasObject"/>
         <NamedIndividual IRI="#StateRelation_5"/>
         <NamedIndividual IRI="#clarinetPlayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="#StateRelation_5"/>
+        <NamedIndividual IRI="#BiographicalSource_3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSource"/>
@@ -5627,12 +5632,17 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasNote"/>
         <NamedIndividual IRI="#BiographicalSource_3"/>
-        <Literal>Da una carta autografa inedita di Pinolo Scaglione. Il brano ha il titolo &apos;L&apos;INIZIO DELLA LUNA E I FALÒ&apos;. Trascriscrizione a cura di Elena Solera.</Literal>
+        <Literal>Intervista a Pinolo Scaglione trasmessa su Radio Due in quattordici puntate (1981)</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasTextContent"/>
         <NamedIndividual IRI="#BiographicalSource_3"/>
-        <Literal>Sono un artigiano di S. Stefano Belbo. Ho settanta anni. Mi chiamo Scaglione Giuseppe, ma qui mi chiamano Pinolo. Ho provato la città (Torino), ho suonato il clarinetto e diretto una banda composta di tutti miei allievi, per tanti anni, poi mi sono sposato e con mio fratello (sono figlio di falegname) mi sono messo a costruire bigonce, lavoro che faccio tutt&apos;ora. Ho trascorso una vita piuttosto tormentata; senza stenti, ma anche senza agi.</Literal>
+        <Literal>Lo suona ancora il clarino? -. Praticamente è stata la maggiore passione della mia vita. Ho dovuto, per motivi particolari, smettere di suonare, ma una volta che non ho più avuto l&apos;impegno del lavoro, ho ripreso: da dieci anni ho ripreso a suonare il clarino, però suono il clarino da ottantenne.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNote"/>
+        <NamedIndividual IRI="#BiographicalSource_4"/>
+        <Literal>Da una carta autografa inedita di Pinolo Scaglione. Il brano ha il titolo &apos;L&apos;INIZIO DELLA LUNA E I FALÒ&apos;. Trascriscrizione a cura di Elena Solera.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasTextContent"/>
@@ -6469,8 +6479,8 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
         <ObjectProperty IRI="#isSubjectOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#includesTrasformation"/>
-        <ObjectProperty IRI="#isTrasformationIncludedIn"/>
+        <ObjectProperty IRI="#includesTransformation"/>
+        <ObjectProperty IRI="#isTransformationIncludedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isFictionalAnalogOf"/>
@@ -6548,7 +6558,7 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
         <Class abbreviatedIRI="cidoc-crm:E13_Attribute_Assignment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#includesTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
         <Class IRI="#FictionalEntityCreation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -6590,14 +6600,14 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#modifiesAttribution"/>
         <ObjectUnionOf>
-            <Class IRI="#RealToFictionalTrasformation"/>
+            <Class IRI="#RealToFictionalTransformation"/>
             <Class IRI="#TextModificationEvent"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#overridesAttribution"/>
         <ObjectUnionOf>
-            <Class IRI="#RealToFictionalTrasformation"/>
+            <Class IRI="#RealToFictionalTransformation"/>
             <Class IRI="#TextModificationEvent"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -6650,8 +6660,8 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#includesTrasformation"/>
-        <Class IRI="#RealToFictionalTrasformation"/>
+        <ObjectProperty IRI="#includesTransformation"/>
+        <Class IRI="#RealToFictionalTransformation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAnnotatedIn"/>
@@ -6853,32 +6863,32 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>FictionalAnalog from RealToFictionalTrasfomation</Literal>
+            <Literal>FictionalAnalog from RealToFictionalTransfomation</Literal>
         </Annotation>
         <Body>
-            <ClassAtom>
-                <Class IRI="#RealToFictionalTrasformation"/>
-                <Variable abbreviatedIRI="rtfo:t"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#modifiesAttribution"/>
-                <Variable abbreviatedIRI="rtfo:t"/>
-                <Variable abbreviatedIRI="rtfo:fictionalRel"/>
-            </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#overridesAttribution"/>
                 <Variable abbreviatedIRI="rtfo:t"/>
                 <Variable abbreviatedIRI="rtfo:realRel"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSubject"/>
-                <Variable abbreviatedIRI="rtfo:realRel"/>
-                <Variable abbreviatedIRI="rtfo:realEntity"/>
+                <ObjectProperty IRI="#modifiesAttribution"/>
+                <Variable abbreviatedIRI="rtfo:t"/>
+                <Variable abbreviatedIRI="rtfo:fictionalRel"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasSubject"/>
                 <Variable abbreviatedIRI="rtfo:fictionalRel"/>
                 <Variable abbreviatedIRI="rtfo:fictionalEntity"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RealToFictionalTransformation"/>
+                <Variable abbreviatedIRI="rtfo:t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSubject"/>
+                <Variable abbreviatedIRI="rtfo:realRel"/>
+                <Variable abbreviatedIRI="rtfo:realEntity"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
@@ -7567,13 +7577,13 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#RealToFictionalTrasformation</IRI>
+        <IRI>#RealToFictionalTransformation</IRI>
         <Literal>The event that represents the transition from an attribution to a real entity to an attribution to a fictional entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RealToFictionalTrasformation</IRI>
-        <Literal xml:lang="en">Real To Fictional Trasformation</Literal>
+        <IRI>#RealToFictionalTransformation</IRI>
+        <Literal xml:lang="en">Real To Fictional Transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7967,7 +7977,7 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#includesTrasformation</IRI>
+        <IRI>#includesTransformation</IRI>
         <Literal xml:lang="en">includes Trasformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8102,7 +8112,7 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isTrasformationIncludedIn</IRI>
+        <IRI>#isTransformationIncludedIn</IRI>
         <Literal xml:lang="en">is Trasformation Included In</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8136,3 +8146,8 @@ di sabbia del Belbo mista all’amaro delle albere, di polvere e buoi</Literal>
         <Literal xml:lang="en">took Place In</Literal>
     </AnnotationAssertion>
 </Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
